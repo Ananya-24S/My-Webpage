@@ -1,0 +1,68 @@
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.container{
+    width: 120%;
+    height: 100vh;
+    background:#f2e9ff;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+.gallery{
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+.img-box{
+    width: 250px;
+    height: 400px;
+    margin: 25px;
+    border-radius: 50px;
+   background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6r8HjcW85O4C3RzSZtLwUqdwV5_xsSONajQ&s);
+   background-size: cover;
+   background-position: left;
+   position: relative;
+   transition: width 0.5s;
+}
+.img-box:nth-child(2){
+    background: url(https://m.media-amazon.com/images/S/pv-target-images/7316c3468213fc323c6e8d5d0c33379f8bacd09b79e0ea21f2ac06696a0fc253.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(3){
+    background: url(https://assets.scriptslug.com/live/img/poster/harry-potter-and-the-goblet-of-fire-2005.jpg?v=1679811487);
+    background-size: cover;
+    background-position: left;
+}
+.img-box:nth-child(4){
+    background: url(https://m.media-amazon.com/images/I/91o9TIyQNgL._AC_UF1000,1000_QL80_.jpg);
+    background-size: cover;
+    background-position:left;
+}
+
+.img-box h3{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 1;
+    transition: bottom 0.5s, opacity 0.5s;
+
+}
+.img-box:hover{
+ width: 300px;
+ cursor: pointer;
+}
+.img-box :hover h3{
+    opacity: 1;
+     bottom: 25px;
+}
+h1{
+   text-align: center;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}

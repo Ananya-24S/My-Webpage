@@ -1,0 +1,67 @@
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.container{
+    width: 120%;
+    height: 100vh;
+    background:rgb(216, 188, 112);
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+.gallery{
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+.img-box{
+    width: 250px;
+    height: 400px;
+    margin: 25px;
+    border-radius: 50px;
+   background: url(https://l450v.alamy.com/450v/2hmn74h/all-of-us-are-dead-2022-original-title-jigeum-uri-hakgyoneun-directed-by-j-q-lee-and-kim-nam-soo-credit-jtbc-studios-album-2hmn74h.jpg);
+   background-size: cover;
+   background-position: left;
+   position: relative;
+   transition: width 0.5s;
+}
+.img-box:nth-child(2){
+    background: url(https://m.media-amazon.com/images/S/pv-target-images/34f0fe8c939edead8b41f36d5c2a120693826767a155c7b1214eaf46df3dfd56.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(3){
+    background: url(https://www.justwatch.com/images/poster/28071689/s718/who-are-you-school-2015.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.img-box:nth-child(4){
+    background: url(https://i.pinimg.com/736x/09/31/f6/0931f684fd63c98250a6c9f23765f459.jpg);
+    background-size: cover;
+    background-position:left;
+}
+.img-box h3{
+    color: rgb(95, 177, 102);
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 1;
+    transition: bottom 0.5s, opacity 0.5s;
+
+}
+.img-box:hover{
+ width: 300px;
+ cursor: pointer;
+}
+.img-box :hover h3{
+    opacity: 1;
+     bottom: 25px;
+}
+h1{
+   text-align: center;
+    font-size: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

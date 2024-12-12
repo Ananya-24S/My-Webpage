@@ -1,0 +1,67 @@
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.container{
+    width: 120%;
+    height: 100vh;
+    background:#f2e9ff;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+.gallery{
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+.img-box{
+    width: 250px;
+    height: 400px;
+    margin: 25px;
+    border-radius: 50px;
+   background: url(https://wallpapercg.com/download/spy-x-family-4k-phone-wallpaper--12759.jpg);
+   background-size: cover;
+   background-position: left;
+   position: relative;
+   transition: width 0.5s;
+}
+.img-box:nth-child(2){
+    background: url(https://m.media-amazon.com/images/M/MV5BNmI1MmYxNWQtY2E5NC00ZTlmLWIzZGEtNzM1YmE3NDA5NzhjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(3){
+    background: url(https://m.media-amazon.com/images/M/MV5BN2VlNTdlMzQtYzE5OC00YmYwLTgyZTItYjEzMWY0ZDNjMTJhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.img-box:nth-child(4){
+    background: url(https://m.media-amazon.com/images/M/MV5BNDUyZTJmODQtZmRkMS00YjJiLTgxZmUtMjQ5OGNjNzkyM2Y5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+    background-size: cover;
+    background-position:left;
+}
+.img-box h3{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 1;
+    transition: bottom 0.5s, opacity 0.5s;
+
+}
+.img-box:hover{
+ width: 300px;
+ cursor: pointer;
+}
+.img-box :hover h3{
+    opacity: 1;
+     bottom: 25px;
+}
+h1{
+   text-align: center;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
